@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="keluar-div">
+			<button class="keluar-btn" onclick="showAlert()">Keluar Game</button>
+		</div>
+		<div class="main-box">
+			<div class="header-box">
+
+				<div class="greetings-box">
+					<h2 style="padding-right: 5px;">Hi, </h2>
+					<h2 id="greetings" style="padding-left: 0;"></h2>
+
+				</div>
+				<div class="box-score">
+					<h2>Score : </h2>
+					<h2 class="scores"></h2>
+
+				</div>
+			</div>
+			<div class="content" data-input-form>
+				<div class="acak-kata">
+					<p class="word"></p>
+				</div>
+				<div class="details">
+					<p class="hint">Hint: <span></span></p>
+					<p class="time">Time Left: <span><b id="timeNumber">30</b>s</span></p>
+				</div>
+				<input data-input-jawaban class="jawaban" type="text" spellcheck="false"
+					placeholder="Masukkan jawabanmu">
+				<div class="buttons">
+					<button class="refresh-word">Refresh Word</button>
+					<button class="check-word">Check Word</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="negara.js" defer></script>
+	<script src="script.js" defer></script>
+	<script>
+		// Fungsi ini akan dipanggil saat tombol diklik
+		function showAlert() {
+			let text = "Yakin mau keluar game?";
+			if (confirm(text) == true) {
+				text = "You pressed OK!";
+				window.location.href ='index.html'
+			} else {
+				text = "You canceled!";
+			}
+			document.getElementById("demo").innerHTML = text;
+	
+		}
+	</script>
+</body>
+
+</html>
+
+<!-- <button onclick="showAlert()">Tampilkan Alert</button>
+<script>
+	function myFunction() {
+
+	}
+</script> -->

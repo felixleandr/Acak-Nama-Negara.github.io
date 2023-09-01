@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Acak Nama Negara Yuk</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="leaderboard.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="keluar-div">
+      <button class="keluar-btn" onclick="showAlert()">Keluar Game</button>
+    </div>
+    <div class="main-box2">
+      <div class="container-judul">
+        <h1 class="judul2">Leaderboard</h1>
+        <div class="pemisah"></div>
+      </div>
+      <div class="top5">
+        <div class="lead1">
+          <div class="image">
+            <img src="Ranked_myth.jpg" alt="picture_1">
+          </div>
+          <div class="userName1">
+            Contoh 1
+          </div>
+          <div class="SCores1">
+            200
+          </div>
+        </div>
+        <div class="lead2">
+          <div class="image">
+            <img src="Ranked.jpg" alt="picture_1">
+          </div>
+          <div class="userName2">
+            Contoh 2
+          </div>
+          <div class="SCores2">
+            100
+          </div>
+        </div>
+        <div class="lead3">
+          <div class="image">
+            <img src="Ranked (1).jpg" alt="picture_1">
+          </div>
+          <div class="userName3">
+            Contoh
+          </div>
+          <div class="SCores3">
+            100
+          </div>
+        </div>
+        <div class="lead4">
+          <div class="image">
+            <img src="Ranked (2).jpg" alt="picture_1">
+          </div>
+          <div class="userName4">
+            Contoh
+          </div>
+          <div class="SCores4">
+            100
+          </div>
+        </div>
+        <div class="lead5">
+          <div class="image">
+            <img src="Ranked (3).jpg" alt="picture_1">
+          </div>
+          <div class="userName5">
+            Contoh
+          </div>
+          <div class="SCores5">
+            100
+          </div>
+        </div>
+      </div>
+      <div class="rankingSaya">
+        <div class="image">
+          <p class="peringkat"></p>
+        </div>
+        <div class="userName6">
+        </div>
+        <div class="SCores6">
+        </div>
+      </div>
+      <div class="input-box2">
+        <p class="username"></p>
+          <button class="play-again-btn" type="button" onclick="window.location.href='main.html'">Main lagi
+          </button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="negara.js"></script>
+  <script src="script.js"></script>
+  <script>
+		// Fungsi ini akan dipanggil saat tombol diklik
+		function showAlert() {
+			let text = "Yakin mau keluar game?";
+			if (confirm(text) == true) {
+				text = "You pressed OK!";
+				window.location.href ='index.html'
+			} else {
+				text = "You canceled!";
+			}
+			document.getElementById("demo").innerHTML = text;
+	
+		}
+	</script>
+</body>
+</html>
