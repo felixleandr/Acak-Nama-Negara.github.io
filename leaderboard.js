@@ -7,7 +7,7 @@ inputan.score = scoreUser
 let dbLeadboard = [
     { username: "TasTasTas", score: 200 },
     { username: "pro_player", score: 170 },
-    { username: "student_phase3", score: 120 },
+    { username: "student3", score: 120 },
     { username: "ahli_gizi", score: 100 },
     { username: "jobseeker", score: 90 },
     { username: "player4", score: 80 },
